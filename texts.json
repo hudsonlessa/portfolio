@@ -1,13 +1,13 @@
 {
 	"english": {
 		"title": "Hudson Lessa",
-		"description": "Game Developer",
+		"subtitle": "Game Developer",
 		"question": "Need a game developer?",
 		"callToAction": "Let's work together"
 	},
 	"portuguese": {
 		"title": "Hudson Lessa",
-		"description": "Desenvolvedor de Jogos",
+		"subtitle": "Desenvolvedor de Jogos",
 		"question": "Precisa de um desenvolvedor de jogos?",
 		"callToAction": "Vamos trabalhar juntos"
 	}

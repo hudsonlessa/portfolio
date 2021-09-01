@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import GlobalStyle from '../styles/global';
-import { lightTheme, darkTheme } from '../themes';
+import GlobalStyle from './styles/global';
+import texts from './texts.json';
+import { lightTheme, darkTheme } from './themes';
+
+import Hero from './components/Hero';
 
 export default function App() {
-	const [currentTheme, setCurrentTheme] = useState(null);
+	const [currentTexts, setCurrentTexts] = useState(null);
+	const [currentTheme, setCurrentTheme] = useState(lightTheme);
+
+	useEffect(() => {
+		setCurrentTexts(texts.portuguese);
+	}, []);
 
 	useEffect(() => {
 		const today = new Date();
@@ -21,6 +29,9 @@ export default function App() {
 	return (
 		<ThemeProvider theme={currentTheme}>
 			<GlobalStyle />
+			<main>
+				<Hero texts={currentTexts} />
+			</main>
 		</ThemeProvider>
 	);
 }

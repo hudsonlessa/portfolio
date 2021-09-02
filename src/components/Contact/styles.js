@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-	padding: 40px 20px;
-	margin: 50px 0;
+	padding: 100px 20px;
 	background-color: ${({ theme }) => theme.background.primary};
 `;
 

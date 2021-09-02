@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Container, Title, Subtitle } from './styles';
+import { Container, Title, Subtitle, Video } from './styles';
 
-export default function Hero({ texts }) {
+export default function Hero({ texts, theme }) {
 	return (
 		texts && (
 			<Container>
+				{theme && <Video src={theme.video} autoPlay muted loop />}
 				<Title>{texts.title}</Title>
 				<Subtitle>{texts.subtitle}</Subtitle>
 			</Container>

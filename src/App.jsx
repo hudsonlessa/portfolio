@@ -30,7 +30,7 @@ export default function App() {
 		<ThemeProvider theme={currentTheme}>
 			<GlobalStyle />
 			<main>
-				<Hero texts={currentTexts} />
+				<Hero texts={currentTexts} theme={currentTheme} />
 			</main>
 		</ThemeProvider>
 	);

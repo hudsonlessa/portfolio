@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import GlobalStyle from './styles/global';
 import texts from './texts.json';
@@ -37,6 +38,7 @@ export default function App() {
 					theme={currentTheme}
 				/>
 			</main>
+			<Footer />
 		</ThemeProvider>
 	);
 }

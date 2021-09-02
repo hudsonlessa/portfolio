@@ -1,9 +1,12 @@
+import valleyDay from './assets/videos/valley_day.mp4';
+import valleyNight from './assets/videos/valley_night.mp4';
+
 export const lightTheme = {
-	videoPath: "./src/assets/videos/valley_day.mp4",
+	video: valleyDay,
 	primary: '#FDFDFD',
 };
 
 export const darkTheme = {
-	videoPath: "./src/assets/videos/valley_night.mp4",
+	video: valleyNight,
 	primary: '#1D1D1D',
 };

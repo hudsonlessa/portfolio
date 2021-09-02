@@ -18,12 +18,21 @@ export const Title = styled.h1`
 	font-size: 56px;
 	font-weight: 400;
 	color: #fff;
+
+	@media (min-width: 768px) {
+		font-size: 144px;
+	}
 `;
 
 export const Subtitle = styled.h2`
 	font-family: 'Raleway';
+	font-size: 16px;
 	font-weight: 400;
 	color: #fff;
+
+	@media (min-width: 768px) {
+		font-size: 32px;
+	}
 `;
 
 export const Video = styled.video`

@@ -36,3 +36,22 @@ export const CallToAction = styled.a`
 		font-size: 96px;
 	}
 `;
+
+export const SocialMedias = styled.ul`
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	list-style-type: none;
+
+	@media (min-width: 768px) {
+		margin-top: 40px;
+	}
+
+	li + li {
+		margin-left: 20px;
+	}
+
+	a {
+		display: block;
+	}
+`;

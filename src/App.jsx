@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
+import Contact from './components/Contact';
+import Hero from './components/Hero';
 import GlobalStyle from './styles/global';
 import texts from './texts.json';
-import { lightTheme, darkTheme } from './themes';
-
-import Hero from './components/Hero';
-import Contact from './components/Contact';
+import { darkTheme, lightTheme } from './themes';
 
 export default function App() {
 	const [currentTexts, setCurrentTexts] = useState(null);
@@ -32,7 +31,11 @@ export default function App() {
 			<GlobalStyle />
 			<main>
 				<Hero texts={currentTexts} theme={currentTheme} />
-				<Contact texts={currentTexts} />
+				<Contact
+					texts={currentTexts}
+					links={texts.links}
+					theme={currentTheme}
+				/>
 			</main>
 		</ThemeProvider>
 	);

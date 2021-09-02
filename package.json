@@ -1,8 +1,8 @@
 {
-	"name": "hudson-lessa",
+	"name": "portfolio",
 	"version": "1.0.0",
 	"main": "index.js",
-	"repository": "https://github.com/hudsonlessa/hudsonlessa.github.io",
+	"repository": "https://github.com/hudsonlessa/portfolio.git",
 	"author": "Hudson Lessa",
 	"license": "MIT",
 	"scripts": {

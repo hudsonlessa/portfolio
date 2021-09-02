@@ -25,4 +25,5 @@ export default createGlobalStyle`
   margin: 0;
   border: 0;
   outline: 0;
+  line-height: 1em;
 }`;

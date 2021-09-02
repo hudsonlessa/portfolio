@@ -10,6 +10,10 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
 	text-transform: uppercase;
+	font-family: 'Bebas Neue';
+  font-size: 56px;
 `;
 
-export const Subtitle = styled.h2``;
+export const Subtitle = styled.h2`
+	font-family: 'Raleway';
+`;

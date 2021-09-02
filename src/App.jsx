@@ -6,6 +6,7 @@ import texts from './texts.json';
 import { lightTheme, darkTheme } from './themes';
 
 import Hero from './components/Hero';
+import Contact from './components/Contact';
 
 export default function App() {
 	const [currentTexts, setCurrentTexts] = useState(null);
@@ -31,6 +32,7 @@ export default function App() {
 			<GlobalStyle />
 			<main>
 				<Hero texts={currentTexts} theme={currentTheme} />
+				<Contact texts={currentTexts} />
 			</main>
 		</ThemeProvider>
 	);

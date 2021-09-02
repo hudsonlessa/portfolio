@@ -10,7 +10,7 @@ import { darkTheme, lightTheme } from './themes';
 
 export default function App() {
 	const [currentTexts, setCurrentTexts] = useState(null);
-	const [currentTheme, setCurrentTheme] = useState(lightTheme);
+	const [currentTheme, setCurrentTheme] = useState(null);
 
 	useEffect(() => {
 		setCurrentTexts(texts.portuguese);
@@ -26,6 +26,10 @@ export default function App() {
 			setCurrentTheme(darkTheme);
 		}
 	}, []);
+
+	if (!currentTheme || !currentTexts) {
+		return null;
+	}
 
 	return (
 		<ThemeProvider theme={currentTheme}>

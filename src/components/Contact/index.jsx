@@ -5,25 +5,23 @@ import { CallToAction, Container, Question, SocialMedias } from './styles';
 
 export default function Contact({ texts, links, theme }) {
 	return (
-		texts && (
-			<Container>
-				<Question>{texts.question}</Question>
-				<CallToAction href="mailto:contato@hudsonlessa.com">
-					{texts.callToAction}
-				</CallToAction>
-				<SocialMedias>
-					<li>
-						<a href={links.linkedin} target="_blank" rel="noreferrer">
-							<LinkedInIcon color={theme.text.primary} size={32} />
-						</a>
-					</li>
-					<li>
-						<a href={links.github} target="_blank" rel="noreferrer">
-							<GitHubIcon color={theme.text.primary} size={32} />
-						</a>
-					</li>
-				</SocialMedias>
-			</Container>
-		)
+		<Container>
+			<Question>{texts.question}</Question>
+			<CallToAction href="mailto:contato@hudsonlessa.com">
+				{texts.callToAction}
+			</CallToAction>
+			<SocialMedias>
+				<li>
+					<a href={links.linkedin} target="_blank" rel="noreferrer">
+						<LinkedInIcon color={theme.text.primary} size={32} />
+					</a>
+				</li>
+				<li>
+					<a href={links.github} target="_blank" rel="noreferrer">
+						<GitHubIcon color={theme.text.primary} size={32} />
+					</a>
+				</li>
+			</SocialMedias>
+		</Container>
 	);
 }

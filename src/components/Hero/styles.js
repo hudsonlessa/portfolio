@@ -16,4 +16,5 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h2`
 	font-family: 'Raleway';
+  font-weight: 400;
 `;

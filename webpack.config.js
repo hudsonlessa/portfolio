@@ -13,15 +13,19 @@ module.exports = {
 				use: ['style-loader', 'css-loader'],
 			},
 			{
-				test: /\.(png|jp(e*)g|svg|gif)$/,
-				use: ['file-loader'],
+				test: /\.(png|jp(e*)g|svg|gif)$/i,
+				type: 'asset/resource',
 			},
 			{
-				test: /\.svg$/,
+				test: /\.svg$/i,
 				use: ['@svgr/webpack'],
 			},
 			{
-				test: /\.(js|jsx)$/,
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				type: 'asset/resource',
+			},
+			{
+				test: /\.(js|jsx)$/i,
 				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader',

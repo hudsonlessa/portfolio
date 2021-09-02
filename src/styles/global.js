@@ -1,21 +1,23 @@
 import { createGlobalStyle } from 'styled-components';
 
+import BebasNeueRegular from '../assets/fonts/BebasNeue-Regular.ttf';
+import RalewayRegular from '../assets/fonts/Raleway-Regular.ttf';
+import RalewayBold from '../assets/fonts/Raleway-Bold.ttf';
+
 export default createGlobalStyle`
 @font-face {
   font-family: "Bebas Neue";
-  src: url('../assets/fonts/BebasNeue-Regular.ttf');
-  font-weight: 400;
+  src: url(${BebasNeueRegular});
 }
 
 @font-face {
   font-family: "Raleway";
-  src: url('../assets/fonts/Raleway-Regular.ttf');
-  font-weight: 400;
+  src: url(${RalewayRegular});
 }
 
 @font-face {
   font-family: "Raleway";
-  src: url('../assets/fonts/Raleway-Bold.ttf');
+  src: url(${RalewayBold});
   font-weight: 700;
 }
 
@@ -26,4 +28,5 @@ export default createGlobalStyle`
   border: 0;
   outline: 0;
   line-height: 1em;
-}`;
+}
+`;

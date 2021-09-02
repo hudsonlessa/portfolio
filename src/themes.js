@@ -9,6 +9,6 @@ export const lightTheme = {
 
 export const darkTheme = {
 	video: valleyNight,
-	background: { primary: '#1d1d1d', secondary: '151515' },
+	background: { primary: '#1d1d1d', secondary: '#151515' },
 	text: { primary: '#fdfdfd', secondary: '#5d5d5d' },
 };

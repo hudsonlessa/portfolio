@@ -3,10 +3,12 @@ import valleyNight from './assets/videos/valley_night.mp4';
 
 export const lightTheme = {
 	video: valleyDay,
-	primary: '#FDFDFD',
+	background: { primary: '#fdfdfd', secondary: '#f5f5f5' },
+	text: { primary: '#1d1d1d', secondary: '#5d5d5d' },
 };
 
 export const darkTheme = {
 	video: valleyNight,
-	primary: '#1D1D1D',
+	background: { primary: '#1d1d1d', secondary: '151515' },
+	text: { primary: '#fdfdfd', secondary: '#5d5d5d' },
 };

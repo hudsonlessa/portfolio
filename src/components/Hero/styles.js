@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-	min-height: 100vh;
+	min-height: stretch;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+
+	@media (min-width: 768px) {
+		min-height: 100vh;
+	}
 `;
 
 export const Title = styled.h1`

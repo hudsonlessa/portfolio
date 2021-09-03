@@ -7,7 +7,7 @@ export default function Contact({ texts, links, theme }) {
 	return (
 		<Container>
 			<Question>{texts.question}</Question>
-			<CallToAction href="mailto:contato@hudsonlessa.com">
+			<CallToAction href={`mailto:${texts.emailAddress}`}>
 				{texts.callToAction}
 			</CallToAction>
 			<SocialMedias>

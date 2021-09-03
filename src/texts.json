@@ -3,13 +3,15 @@
 		"title": "Hudson Lessa",
 		"subtitle": "Game Developer",
 		"question": "Need a game developer?",
-		"callToAction": "Let's work together"
+		"callToAction": "Let's work together",
+		"emailAddress": "contact@hudsonlessa.com"
 	},
 	"portuguese": {
 		"title": "Hudson Lessa",
 		"subtitle": "Desenvolvedor de Jogos",
 		"question": "Precisa de um desenvolvedor de jogos?",
-		"callToAction": "Vamos trabalhar juntos"
+		"callToAction": "Vamos trabalhar juntos",
+		"emailAddress": "contato@hudsonlessa.com"
 	},
 	"links": {
 		"linkedin": "http://linkedin.com/in/hudsonlessa",

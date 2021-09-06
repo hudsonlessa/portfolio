@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	devServer: {
@@ -46,6 +47,14 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, 'public', 'index.html'),
 			inject: true,
+		}),
+		new CopyPlugin({
+			patterns: [
+				{
+					context: path.resolve(__dirname),
+					from: path.join(__dirname, 'public', 'CNAME'),
+				},
+			],
 		}),
 	],
 	resolve: {

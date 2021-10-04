@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactGA from 'react-ga';
 import { ThemeProvider } from 'styled-components';
 
 import Contact from './components/Contact';
@@ -9,6 +10,11 @@ import texts from './texts.json';
 import { darkTheme, lightTheme } from './themes';
 
 export default function App() {
+	const trackingId = 'UA-127796749-1';
+
+	ReactGA.initialize(trackingId);
+	ReactGA.pageview(window.location.pathname + window.location.search);
+
 	const [currentTexts, setCurrentTexts] = useState(null);
 	const [currentTheme, setCurrentTheme] = useState(null);
 

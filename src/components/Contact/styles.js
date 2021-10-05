@@ -49,8 +49,4 @@ export const SocialMedias = styled.ul`
 	li + li {
 		margin-left: 20px;
 	}
-
-	a {
-		display: block;
-	}
 `;

@@ -5,6 +5,8 @@ import { ThemeProvider } from 'styled-components';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import Projects from './components/Projects';
+import projectsData from './projectsData';
 import GlobalStyle from './styles/global';
 import texts from './texts.json';
 import { darkTheme, lightTheme } from './themes';
@@ -42,6 +44,7 @@ export default function App() {
 			<GlobalStyle />
 			<main>
 				<Hero texts={currentTexts} theme={currentTheme} />
+				<Projects projectsData={projectsData} />
 				<Contact
 					texts={currentTexts}
 					links={texts.links}

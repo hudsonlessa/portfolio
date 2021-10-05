@@ -12,46 +12,46 @@ import texts from './texts.json';
 import { darkTheme, lightTheme } from './themes';
 
 export default function App() {
-	const trackingId = 'UA-127796749-1';
+  const trackingId = 'UA-127796749-1';
 
-	ReactGA.initialize(trackingId);
-	ReactGA.pageview(window.location.pathname + window.location.search);
+  ReactGA.initialize(trackingId);
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
-	const [currentTexts, setCurrentTexts] = useState(null);
-	const [currentTheme, setCurrentTheme] = useState(null);
+  const [currentTexts, setCurrentTexts] = useState(null);
+  const [currentTheme, setCurrentTheme] = useState(null);
 
-	useEffect(() => {
-		setCurrentTexts(texts.portuguese);
-	}, []);
+  useEffect(() => {
+    setCurrentTexts(texts.portuguese);
+  }, []);
 
-	useEffect(() => {
-		const today = new Date();
-		const currentHour = today.getHours();
+  useEffect(() => {
+    const today = new Date();
+    const currentHour = today.getHours();
 
-		if (currentHour >= 6 && currentHour < 18) {
-			setCurrentTheme(lightTheme);
-		} else {
-			setCurrentTheme(darkTheme);
-		}
-	}, []);
+    if (currentHour >= 6 && currentHour < 18) {
+      setCurrentTheme(lightTheme);
+    } else {
+      setCurrentTheme(darkTheme);
+    }
+  }, []);
 
-	if (!currentTheme || !currentTexts) {
-		return null;
-	}
+  if (!currentTheme || !currentTexts) {
+    return null;
+  }
 
-	return (
-		<ThemeProvider theme={currentTheme}>
-			<GlobalStyle />
-			<main>
-				<Hero texts={currentTexts} theme={currentTheme} />
-				<Projects projectsData={projectsData} />
-				<Contact
-					texts={currentTexts}
-					links={texts.links}
-					theme={currentTheme}
-				/>
-			</main>
-			<Footer />
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme={currentTheme}>
+      <GlobalStyle />
+      <main>
+        <Hero texts={currentTexts} theme={currentTheme} />
+        <Projects projectsData={projectsData} />
+        <Contact
+          texts={currentTexts}
+          links={texts.links}
+          theme={currentTheme}
+        />
+      </main>
+      <Footer />
+    </ThemeProvider>
+  );
 }

@@ -5,7 +5,6 @@ import { ThemeProvider } from 'styled-components';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import Loader from './components/Loader';
 import Projects from './components/Projects';
 import projectsData from './projectsData';
 import GlobalStyle from './styles/global';
@@ -42,7 +41,6 @@ export default function App() {
 
   return (
     <ThemeProvider theme={currentTheme}>
-      <Loader />
       <GlobalStyle />
       <main>
         <Hero texts={currentTexts} theme={currentTheme} />

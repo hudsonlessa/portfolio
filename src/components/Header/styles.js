@@ -20,3 +20,23 @@ export const Hint = styled.p`
   font-family: 'Raleway';
   color: #c819ff;
 `;
+
+export const LanguageSelector = styled.ul`
+  display: flex;
+  list-style-type: none;
+  font-family: 'Raleway';
+  color: #fdfdfd;
+
+  li {
+    pointer-events: all;
+    cursor: pointer;
+
+    :hover {
+      color: #00ff99;
+    }
+
+    + li {
+      margin-left: 20px;
+    }
+  }
+`;

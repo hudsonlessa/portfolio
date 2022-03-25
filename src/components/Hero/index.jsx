@@ -9,8 +9,8 @@ export default function Hero({ texts, theme }) {
       <Background>
         <InfiniteLights />
       </Background>
-      <Title>{texts.title}</Title>
       <Subtitle>{texts.subtitle}</Subtitle>
+      <Title>{texts.title}</Title>
     </Container>
   );
 }

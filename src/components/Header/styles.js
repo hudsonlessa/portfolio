@@ -43,7 +43,13 @@ export const LanguageSelector = styled.ul`
       font-family: 'Raleway';
       font-size: 16px;
 
-      :hover {
+      @media (hover: hover) {
+        :hover {
+          color: #00ff99;
+        }
+      }
+
+      :active {
         color: #00ff99;
       }
     }

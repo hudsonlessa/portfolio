@@ -27,13 +27,20 @@ export const CallToAction = styled.a`
   color: ${({ theme }) => theme.text.primary};
   text-decoration: none;
 
-  &:hover {
-    color: #00ff99;
-    text-decoration: underline;
-  }
-
   @media (min-width: 768px) {
     font-size: 96px;
+  }
+
+  @media (hover: hover) {
+    :hover {
+      color: #00ff99;
+      text-decoration: underline;
+    }
+  }
+
+  :active {
+    color: #00ff99;
+    text-decoration: underline;
   }
 `;
 

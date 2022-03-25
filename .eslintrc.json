@@ -17,6 +17,7 @@
     "react/prop-types": 0,
     "react/no-array-index-key": 0,
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    "no-param-reassign": 0
   }
 }

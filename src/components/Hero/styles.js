@@ -16,14 +16,16 @@ export const Title = styled.h1`
   pointer-events: none;
   user-select: none;
   z-index: 0;
+  margin-top: 10px;
   text-transform: uppercase;
-  font-family: 'Bebas Neue';
-  font-size: 56px;
+  font-family: 'Azo Sans Uber';
+  font-size: 32px;
   font-weight: 400;
   color: #fdfdfd;
 
   @media (min-width: 768px) {
-    font-size: 144px;
+    margin-top: 24px;
+    font-size: 80px;
   }
 `;
 
@@ -31,14 +33,10 @@ export const Subtitle = styled.h2`
   pointer-events: none;
   user-select: none;
   z-index: 0;
-  font-family: 'Raleway';
-  font-size: 16px;
+  font-family: 'LTC Bodoni 175';
+  font-size: 24px;
   font-weight: 400;
-  color: #fdfdfd;
-
-  @media (min-width: 768px) {
-    font-size: 32px;
-  }
+  color: #00ff99;
 `;
 
 export const Background = styled.div`

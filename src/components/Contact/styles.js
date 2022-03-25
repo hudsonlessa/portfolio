@@ -28,6 +28,7 @@ export const CallToAction = styled.a`
   text-decoration: none;
 
   &:hover {
+    color: #00ff99;
     text-decoration: underline;
   }
 

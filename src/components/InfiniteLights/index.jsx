@@ -41,8 +41,8 @@ export default function InfiniteLights() {
         shoulderLines: 0x131318,
         brokenLines: 0x131318,
 
-        leftCars: [0x0ce8ce, 0x00ff99, 0x0ce851],
-        rightCars: [0xe80cd8, 0xc819ff, 0x780ce8],
+        leftCars: [0xe80cd8, 0xc819ff, 0x780ce8],
+        rightCars: [0x0ce8ce, 0x00ff99, 0x0ce851],
       },
     };
 

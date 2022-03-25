@@ -10,7 +10,7 @@ import Projects from './components/Projects';
 import projectsData from './projectsData';
 import GlobalStyle from './styles/global';
 import texts from './texts.json';
-import { darkTheme, lightTheme } from './themes';
+import { darkTheme } from './themes';
 
 export default function App() {
   const trackingId = 'UA-127796749-1';
@@ -23,17 +23,7 @@ export default function App() {
 
   useEffect(() => {
     setCurrentTexts(texts.portuguese);
-  }, []);
-
-  useEffect(() => {
-    const today = new Date();
-    const currentHour = today.getHours();
-
-    if (currentHour >= 6 && currentHour < 18) {
-      setCurrentTheme(lightTheme);
-    } else {
-      setCurrentTheme(darkTheme);
-    }
+    setCurrentTheme(darkTheme);
   }, []);
 
   if (!currentTheme || !currentTexts) {

@@ -3,7 +3,7 @@ import React from 'react';
 import InfiniteLights from '../InfiniteLights';
 import { Background, Container, Subtitle, Title } from './styles';
 
-export default function Hero({ texts, theme }) {
+export default function Hero({ texts }) {
   return (
     <Container>
       <Background>

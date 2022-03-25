@@ -26,6 +26,21 @@ export default function App() {
     setCurrentTheme(darkTheme);
   }, []);
 
+  const handleLanguageClick = (e) => {
+    const countryCode = e.target.innerHTML;
+
+    switch (countryCode) {
+      case 'US':
+        setCurrentTexts(texts.english);
+        break;
+      case 'BR':
+        setCurrentTexts(texts.portuguese);
+        break;
+      default:
+        break;
+    }
+  };
+
   if (!currentTheme || !currentTexts) {
     return null;
   }
@@ -33,7 +48,7 @@ export default function App() {
   return (
     <ThemeProvider theme={currentTheme}>
       <GlobalStyle />
-      <Header texts={currentTexts} />
+      <Header texts={currentTexts} handleLanguageClick={handleLanguageClick} />
       <main>
         <Hero texts={currentTexts} theme={currentTheme} />
         <Projects projectsData={projectsData} />

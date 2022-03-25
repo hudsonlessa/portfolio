@@ -17,6 +17,6 @@ export const Container = styled.header`
 export const Hint = styled.p`
   user-select: none;
   margin-left: auto;
-  font-family: 'LTC Bodoni 175';
+  font-family: 'Raleway';
   color: #c819ff;
 `;

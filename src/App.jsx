@@ -22,7 +22,7 @@ export default function App() {
   const [currentTheme, setCurrentTheme] = useState(null);
 
   useEffect(() => {
-    setCurrentTexts(texts.portuguese);
+    setCurrentTexts(texts.english);
     setCurrentTheme(darkTheme);
   }, []);
 

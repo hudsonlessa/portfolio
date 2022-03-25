@@ -10,7 +10,7 @@ export const Container = styled.header`
     z-index: 1;
     width: 100%;
     padding: 40px 80px;
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 

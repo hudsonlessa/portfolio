@@ -29,19 +29,23 @@ export const Hint = styled.p`
 export const LanguageSelector = styled.ul`
   display: flex;
   list-style-type: none;
-  font-family: 'Raleway';
-  color: #fdfdfd;
 
   li {
-    pointer-events: all;
-    cursor: pointer;
-
-    :hover {
-      color: #00ff99;
-    }
-
     + li {
       margin-left: 20px;
+    }
+
+    button {
+      pointer-events: all;
+      cursor: pointer;
+      background-color: transparent;
+      color: #fdfdfd;
+      font-family: 'Raleway';
+      font-size: 16px;
+
+      :hover {
+        color: #00ff99;
+      }
     }
   }
 `;

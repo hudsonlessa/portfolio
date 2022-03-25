@@ -34,11 +34,3 @@ export const Subtitle = styled.h2`
     font-size: 32px;
   }
 `;
-
-export const Video = styled.video`
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;

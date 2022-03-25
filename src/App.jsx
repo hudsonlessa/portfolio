@@ -50,7 +50,7 @@ export default function App() {
       <GlobalStyle />
       <Header texts={currentTexts} handleLanguageClick={handleLanguageClick} />
       <main>
-        <Hero texts={currentTexts} theme={currentTheme} />
+        <Hero texts={currentTexts} />
         <Projects projectsData={projectsData} />
         <Contact
           texts={currentTexts}

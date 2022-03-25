@@ -18,14 +18,14 @@ export const Title = styled.h1`
   z-index: 0;
   margin-top: 10px;
   text-transform: uppercase;
-  font-family: 'Azo Sans Uber';
-  font-size: 32px;
+  font-family: 'Bebas Neue';
+  font-size: 64px;
   font-weight: 400;
   color: #fdfdfd;
 
   @media (min-width: 768px) {
     margin-top: 24px;
-    font-size: 80px;
+    font-size: 128px;
   }
 `;
 
@@ -33,10 +33,14 @@ export const Subtitle = styled.h2`
   pointer-events: none;
   user-select: none;
   z-index: 0;
-  font-family: 'LTC Bodoni 175';
-  font-size: 24px;
+  font-family: 'Raleway';
+  font-size: 16px;
   font-weight: 400;
   color: #00ff99;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 export const Background = styled.div`

@@ -2,6 +2,7 @@
   "english": {
     "title": "Hudson Lessa",
     "subtitle": "Game Developer",
+    "hint": "Hint: Press to speed up",
     "question": "Need a game developer?",
     "callToAction": "Let's work together",
     "emailAddress": "contact@hudsonlessa.com"
@@ -9,6 +10,7 @@
   "portuguese": {
     "title": "Hudson Lessa",
     "subtitle": "Desenvolvedor de Jogos",
+    "hint": "Dica: Pressione para acelerar",
     "question": "Precisa de um desenvolvedor de jogos?",
     "callToAction": "Vamos trabalhar juntos",
     "emailAddress": "contato@hudsonlessa.com"

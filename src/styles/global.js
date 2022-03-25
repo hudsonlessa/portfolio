@@ -42,5 +42,6 @@ export default createGlobalStyle`
   border: 0;
   outline: 0;
   line-height: 1em;
+  transition: .2s;
 }
 `;

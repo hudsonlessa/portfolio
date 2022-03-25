@@ -21,25 +21,29 @@ export default function App() {
   const [currentTexts, setCurrentTexts] = useState(null);
   const [currentTheme, setCurrentTheme] = useState(null);
 
-  useEffect(() => {
-    setCurrentTexts(texts.english);
-    setCurrentTheme(darkTheme);
-  }, []);
-
-  const handleLanguageClick = (e) => {
-    const countryCode = e.target.innerHTML;
+  const switchLanguage = () => {
+    const countryCode = window.localStorage.getItem('countryCode');
 
     switch (countryCode) {
+      default:
       case 'US':
         setCurrentTexts(texts.english);
         break;
       case 'BR':
         setCurrentTexts(texts.portuguese);
         break;
-      default:
-        break;
     }
   };
+
+  const handleLanguageClick = (e) => {
+    window.localStorage.setItem('countryCode', e.target.innerHTML);
+    switchLanguage();
+  };
+
+  useEffect(() => {
+    switchLanguage();
+    setCurrentTheme(darkTheme);
+  }, []);
 
   if (!currentTheme || !currentTexts) {
     return null;
